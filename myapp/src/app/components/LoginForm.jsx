@@ -1,4 +1,3 @@
-// app/components/LoginForm.jsx
 'use client';
 
 import { useState } from 'react';

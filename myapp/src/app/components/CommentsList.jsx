@@ -1,4 +1,3 @@
-// app/components/CommentsList.jsx
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -8,18 +7,17 @@ import io from 'socket.io-client';
 import axios from 'axios';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-const socket = io('http://localhost:4000'); // Backend server URL
+const socket = io('http://localhost:4000'); 
 
 const CommentsList = () => {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    // Fetch initial comments
+   
     axios.get('http://localhost:4000/api/comments').then((response) => {
       setComments(response.data);
     });
 
-    // Listen for new comments
     socket.on('newComment', (newComment) => {
       setComments((prevComments) => [newComment, ...prevComments]);
     });

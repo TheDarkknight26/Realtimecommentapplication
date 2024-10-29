@@ -63,7 +63,7 @@ app.post('/api/comments', (req, res) => {
 io.on('connection', (socket) => {
   console.log('user is connected');
   socket.on('disconnect', () => {
-    console.log('User disconnected');
+    console.log('user is disconnected');
   });
 });
 

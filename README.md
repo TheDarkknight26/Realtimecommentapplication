@@ -55,7 +55,7 @@ Ensure you have the following installed:
    ```
 2. **Configure your MySQL connection inside comments_backend/index.js**:
      ```bash
-      const db = mysql.createConnection({
+     const db = mysql.createConnection({
      host: 'localhost',
      user: 'your_mysql_user',
      password: 'your_mysql_password',
@@ -116,7 +116,7 @@ Ensure you have the following installed:
  ```
 **Start the frontend server**:
 ```bash
-cd comments_frontend
+cd Realtimecommentapplication/comments_frontend
 npm run dev
 ```
 

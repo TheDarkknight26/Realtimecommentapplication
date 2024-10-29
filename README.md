@@ -12,8 +12,7 @@ A simple real-time comments system built with Next.js, Node.js, MySQL, and Socke
    - [Database Setup](#database-setup)
 4. [How to Run](#how-to-run)
 5. [Features](#features)
-6. [Contributing](#contributing)
-7. [License](#license)
+
 
 ---
 
